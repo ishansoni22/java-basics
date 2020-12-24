@@ -11,10 +11,10 @@ class ReentrantWorker {
 
   public void produce() throws InterruptedException {
     lock.lock();
-    System.out.println("Producer | producing values");
+    System.out.println("PriorityBlockingQueueExampleConsumer | producing values");
     Thread.sleep(5000);
     condition.await();
-    System.out.println("Producer | finished");
+    System.out.println("PriorityBlockingQueueExampleConsumer | finished");
     lock.unlock();
   }
 

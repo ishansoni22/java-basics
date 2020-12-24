@@ -16,7 +16,7 @@ class ProducerConsumerProcessor {
     synchronized (lock) {
       while (true) {
         if (values.size() >= UPPER_LIMIT) {
-          System.out.println("Producer | Limit reached. Stopping producing values...");
+          System.out.println("PriorityBlockingQueueExampleConsumer | Limit reached. Stopping producing values...");
           lock.wait();
         } else {
           Thread.sleep(1000);

@@ -22,7 +22,7 @@ class Processor {
       /**
        * Wakes up a single thread that is waiting on this object’s monitor.
        * If any threads are waiting on this object, one of them is chosen to be awakened (The choice is arbitrary)
-       * In this case, it wakes up any arbitrary thread that is waiting for the class intrinsic lock(Producer!)
+       * In this case, it wakes up any arbitrary thread that is waiting for the class intrinsic lock(PriorityBlockingQueueExampleConsumer!)
        */
       notify();
       Thread.sleep(5000);
