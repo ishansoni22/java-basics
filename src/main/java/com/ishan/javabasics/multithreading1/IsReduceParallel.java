@@ -1,4 +1,4 @@
-package com.ishan.javabasics.paralleANDasync;
+package com.ishan.javabasics.multithreading1;
 
 import java.util.Arrays;
 import java.util.List;

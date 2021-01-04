@@ -1,9 +1,9 @@
-package com.ishan.javabasics.paralleANDasync;
+package com.ishan.javabasics.multithreading1;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class SequentialVsParallel {
+public class SequentialToParallelUsingStreams {
 
   public static void main(String[] args) {
     List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
@@ -11,7 +11,7 @@ public class SequentialVsParallel {
     numbers
         //.stream()
         .parallelStream()
-        .map(SequentialVsParallel::transform)
+        .map(SequentialToParallelUsingStreams::transform)
         //.forEach(System.out::println);
         .forEachOrdered(System.out::println);
   }
